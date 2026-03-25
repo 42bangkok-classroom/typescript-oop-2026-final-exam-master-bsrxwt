@@ -11,6 +11,10 @@ export class ProductController {
     data: Product[];
     message: string;
   } {
-    return this.productService.findAll();
+    return {
+      success: true,
+      data: this.productService.findAll(),
+      message: 'Fetched products successfully',
+    };
   }
 }

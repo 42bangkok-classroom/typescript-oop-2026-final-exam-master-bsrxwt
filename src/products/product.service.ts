@@ -5,19 +5,11 @@ import * as path from 'path';
 
 @Injectable()
 export class ProductService {
-  findAll(): {
-    success: boolean;
-    data: Product[];
-    message: string;
-  } {
+  findAll(): Product[] {
     const result = fs.readFileSync(
       path.join(process.cwd(), 'data', 'products.json'),
       'utf-8',
     );
-    return {
-      success: true,
-      data: JSON.parse(result) as Product[],
-      message: 'Fetched products successfully',
-    };
+    return JSON.parse(result) as Product[];
   }
 }
