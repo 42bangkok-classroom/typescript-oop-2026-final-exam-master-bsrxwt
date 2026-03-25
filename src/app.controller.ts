@@ -9,11 +9,11 @@ export class AppController {
   getHello(): {
     success: boolean;
     data: {
-      service: string,
-      version: string
+      service: string;
+      version: string;
     };
     message: string;
-  }{
+  } {
     return this.appService.getHello();
   }
 }

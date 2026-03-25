@@ -5,20 +5,18 @@ export class AppService {
   getHello(): {
     success: boolean;
     data: {
-      service: string,
-      version: string
+      service: string;
+      version: string;
     };
     message: string;
-  }
-    {
-      return {
+  } {
+    return {
       success: true,
       data: {
-        service: "purchase-api",
-        version: "1.0.0"
+        service: 'purchase-api',
+        version: '1.0.0',
       },
-      message: "Hello NestJS"
-    }
-  
-}
+      message: 'Hello NestJS',
+    };
+  }
 }
