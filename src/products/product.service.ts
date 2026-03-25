@@ -10,13 +10,13 @@ export class ProductService {
     data: Product[];
     message: string;
   } {
-    const fileData = fs.readFileSync(
+    const result = fs.readFileSync(
       path.join(process.cwd(), 'data', 'products.json'),
       'utf-8',
     );
     return {
       success: true,
-      data: JSON.parse(fileData) as Product[],
+      data: JSON.parse(result) as Product[],
       message: 'Fetched products successfully',
     };
   }
