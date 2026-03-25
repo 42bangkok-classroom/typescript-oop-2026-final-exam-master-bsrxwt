@@ -9,16 +9,15 @@ export class ProductService {
     success: boolean;
     data: Product[];
     message: string;
-  } 
-  {
+  } {
     const fileData = fs.readFileSync(
       path.join(process.cwd(), 'data', 'products.json'),
       'utf-8',
     );
     return {
-        success: true,
-        data: JSON.parse(fileData) as Product[] ,
-        message: "Fetched products successfully"
-      };
+      success: true,
+      data: JSON.parse(fileData) as Product[],
+      message: 'Fetched products successfully',
+    };
   }
 }
