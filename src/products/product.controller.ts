@@ -6,7 +6,11 @@ import { Product } from './product.interface';
 export class ProductController {
   constructor(private readonly productService: ProductService) {}
   @Get()
-  findAll(): Product[] {
+  findAll(): {
+    success: boolean;
+    data: Product[];
+    message: string;
+  } {
     return this.productService.findAll();
   }
 }
