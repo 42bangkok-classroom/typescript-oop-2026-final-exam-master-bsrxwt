@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop",
+    "price": 25000,
+    "stock": 10,
+    "description": "High performance laptop"
+  },
+  {
+    "id": 2,
+    "name": "Mouse",
+    "price": 500,
+    "stock": 50,
+    "description": "Wireless mouse"
+  },
+  {
+    "id": 3,
+    "name": "Keyboard",
+    "price": 1200,
+    "stock": 30,
+    "description": "Mechanical keyboard"
+  },
+  {
+    "id": 4,
+    "name": "Monitor",
+    "price": 8000,
+    "stock": 15,
+    "description": "27 inch 4K monitor"
+  },
+  {
+    "id": 5,
+    "name": "Webcam",
+    "price": 2000,
+    "stock": 25,
+    "description": "HD webcam with microphone"
+  },
+  {
+    "id": 6,
+    "name": "Headphones",
+    "price": 3500,
+    "stock": 20,
+    "description": "Noise cancelling headphones"
+  },
+  {
+    "id": 7,
+    "name": "USB Drive",
+    "price": 300,
+    "stock": 100,
+    "description": "64GB USB 3.0 drive"
+  },
+  {
+    "id": 8,
+    "name": "SSD",
+    "price": 4500,
+    "stock": 40,
+    "description": "1TB NVMe SSD"
+  }
+]

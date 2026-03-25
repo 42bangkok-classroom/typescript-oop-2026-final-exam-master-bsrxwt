@@ -1,0 +1,215 @@
+{
+    "title": "TypeScript OOP Final Exam",
+    "tests": [
+        {
+            "name": "Choices - Unit Test",
+            "setup": "",
+            "run": "npm run test:choices",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 10,
+            "points": 10
+        },
+        {
+            "name": "Problem 0 - Unit Test",
+            "setup": "",
+            "run": "npm run test:p00",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 10,
+            "points": 0.5
+        },
+        {
+            "name": "Problem 0 - E2E Test",
+            "setup": "",
+            "run": "npm run test:e2e:p00",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 10,
+            "points": 0.5
+        },
+        {
+            "name": "Problem 1 - Unit Test",
+            "setup": "",
+            "run": "npm run test:p01",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 10,
+            "points": 0.5
+        },
+        {
+            "name": "Problem 1 - E2E Test",
+            "setup": "",
+            "run": "npm run test:e2e:p01",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 10,
+            "points": 0.5
+        },
+        {
+            "name": "Problem 2 - Unit Test",
+            "setup": "",
+            "run": "npm run test:p02",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 10,
+            "points": 0.5
+        },
+        {
+            "name": "Problem 2 - E2E Test",
+            "setup": "",
+            "run": "npm run test:e2e:p02",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 10,
+            "points": 0.5
+        },
+        {
+            "name": "Problem 3 - Unit Test",
+            "setup": "",
+            "run": "npm run test:p03",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 10,
+            "points": 1
+        },
+        {
+            "name": "Problem 3 - E2E Test",
+            "setup": "",
+            "run": "npm run test:e2e:p03",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 10,
+            "points": 1
+        },
+        {
+            "name": "Problem 4 - Point 1 (Unit + E2E) - ถูกต้องตาม id",
+            "setup": "",
+            "run": "npm run test:p04:point-1 && npm run test:e2e:p04:point-1",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 10,
+            "points": 1
+        },
+        {
+            "name": "Problem 4 - Point 2 (Unit + E2E) - กรณีไม่พบ id",
+            "setup": "",
+            "run": "npm run test:p04:point-2 && npm run test:e2e:p04:point-2",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 10,
+            "points": 1
+        },
+        {
+            "name": "Problem 5 - Point 1 (Unit + E2E) - ใช้ DTO + ValidationPipe ตรวจข้อมูล",
+            "setup": "",
+            "run": "npm run test:p05:point-1 && npm run test:e2e:p05:point-1",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 10,
+            "points": 1
+        },
+        {
+            "name": "Problem 5 - Point 2 (Unit + E2E) - สร้าง purchase สำเร็จ, คำนวณ totalPrice, เขียนกลับไฟล์",
+            "setup": "",
+            "run": "npm run test:p05:point-2 && npm run test:e2e:p05:point-2",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 10,
+            "points": 2
+        },
+        {
+            "name": "Problem 6 - Point 1 (Unit + E2E) - ใช้ DTO + ValidationPipe ตรวจข้อมูล update",
+            "setup": "",
+            "run": "npm run test:p06:point-1 && npm run test:e2e:p06:point-1",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 10,
+            "points": 1
+        },
+        {
+            "name": "Problem 6 - Point 2 (Unit + E2E) - อัปเดต purchase สำเร็จ และเขียนกลับไฟล์",
+            "setup": "",
+            "run": "npm run test:p06:point-2 && npm run test:e2e:p06:point-2",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 10,
+            "points": 2
+        },
+        {
+            "name": "Problem 7 - Unit Test",
+            "setup": "",
+            "run": "npm run test:p07",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 10,
+            "points": 1
+        },
+        {
+            "name": "Problem 7 - E2E Test",
+            "setup": "",
+            "run": "npm run test:e2e:p07",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 10,
+            "points": 1
+        },
+        {
+            "name": "Problem 8.1 - Unit Test",
+            "setup": "",
+            "run": "npm run test:p08-1:point-1",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 10,
+            "points": 1
+        },
+        {
+            "name": "Problem 8.1 - E2E Test",
+            "setup": "",
+            "run": "npm run test:e2e:p08-1:point-2",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 10,
+            "points": 1
+        },
+        {
+            "name": "Problem 8.2 - Unit Test",
+            "setup": "",
+            "run": "npm run test:p08-2:point-1",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 10,
+            "points": 1.5
+        },
+        {
+            "name": "Problem 8.2 - E2E Test",
+            "setup": "",
+            "run": "npm run test:e2e:p08-2:point-2",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 10,
+            "points": 1.5
+        }
+    ]
+}

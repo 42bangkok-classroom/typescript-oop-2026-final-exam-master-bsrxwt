@@ -1,0 +1,74 @@
+name: Autograding Test
+
+on:
+  push:
+    branches: ['main', 'master']
+  pull_request:
+    branches: ['main', 'master']
+
+permissions:
+  checks: write
+  actions: read
+  contents: read
+
+jobs:
+  autograde:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout student repo
+      - name: Checkout student submission
+        uses: actions/checkout@v4
+
+      # 2. Setup Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      # 3. Clone Tester
+      - name: Clone tester repository
+        run: |
+          git clone https://oauth2:${GITLAB_TOKEN}@gitlab.com/42bangkok-classroom/typescript-oop-final-exam-tester.git tester
+        env:
+          GITLAB_TOKEN: ${{ secrets.OOP_CLASSROOM_GITLAB_TOKEN }}
+
+      # 4. Setup files
+      - name: Setup test files
+        run: |
+          echo "=== Setup test files ==="
+          # Create necessary directories if they don't exist
+          mkdir -p src/user test
+          # Copy unit test files from tester/src to subject/src
+          rsync -av \
+            --include="*/" \
+            --include="*.spec.ts" \
+            --exclude="*" \
+            tester/src/ src/
+          # Copy e2e test files from tester/test to subject/test
+          rsync -av \
+            --include="*.e2e-spec.ts" \
+            --include="jest-e2e.json" \
+            --exclude="*" \
+            tester/test/ test/
+          # Copy package.json from tester (contains test scripts and jest config)
+          cp tester/package.json package.json
+          # Copy eslint config from tester
+          cp tester/eslint.config.mjs eslint.config.mjs || true
+          # Copy autograding config from tester
+          mkdir -p .github/classroom
+          cp -f tester/.github/classroom/autograding.json .github/classroom/autograding.json
+          # Grading uses tester dataset (richer than starter data/ in student repo)
+          mkdir -p data
+          cp -f tester/data/products.json data/products.json
+          cp -f tester/data/purchases.json data/purchases.json
+          echo "=== Finish Setup test files ==="
+
+      # 5. Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # 6. Autograding action (will run test commands automatically)
+      - name: Autograding
+        uses: education/autograding@v1

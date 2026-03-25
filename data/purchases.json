@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "customerName": "John Doe",
+    "purchaseDate": "2024-01-15",
+    "items": [
+      {
+        "productId": 1,
+        "quantity": 2,
+        "price": 25000
+      },
+      {
+        "productId": 2,
+        "quantity": 5,
+        "price": 500
+      },
+      {
+        "productId": 3,
+        "quantity": 1,
+        "price": 1200
+      }
+    ],
+    "totalPrice": 53700
+  },
+  {
+    "id": 2,
+    "customerName": "Jane Smith",
+    "purchaseDate": "2024-01-16",
+    "items": [
+      {
+        "productId": 4,
+        "quantity": 1,
+        "price": 8000
+      },
+      {
+        "productId": 5,
+        "quantity": 2,
+        "price": 2000
+      }
+    ],
+    "totalPrice": 12000
+  },
+  {
+    "id": 3,
+    "customerName": "Bob Johnson",
+    "purchaseDate": "2024-01-17",
+    "items": [
+      {
+        "productId": 6,
+        "quantity": 3,
+        "price": 3500
+      },
+      {
+        "productId": 7,
+        "quantity": 10,
+        "price": 300
+      }
+    ],
+    "totalPrice": 13500
+  },
+  {
+    "id": 4,
+    "customerName": "Alice Williams",
+    "purchaseDate": "2024-01-18",
+    "items": [
+      {
+        "productId": 1,
+        "quantity": 1,
+        "price": 25000
+      },
+      {
+        "productId": 4,
+        "quantity": 2,
+        "price": 8000
+      },
+      {
+        "productId": 8,
+        "quantity": 1,
+        "price": 4500
+      }
+    ],
+    "totalPrice": 41500
+  },
+  {
+    "id": 5,
+    "customerName": "Charlie Brown",
+    "purchaseDate": "2024-01-19",
+    "items": [
+      {
+        "productId": 2,
+        "quantity": 20,
+        "price": 500
+      },
+      {
+        "productId": 3,
+        "quantity": 5,
+        "price": 1200
+      },
+      {
+        "productId": 7,
+        "quantity": 15,
+        "price": 300
+      }
+    ],
+    "totalPrice": 20500
+  }
+]
